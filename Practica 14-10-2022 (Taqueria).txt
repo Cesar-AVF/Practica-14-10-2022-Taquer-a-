@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los TacoCSS</title>
+
+    <!-- Autor: César Augusto Vargas Farfán -->
+    <!-- Praactica: Taqueria 14-10-2022 -->
+
+    <style>
+        header {
+            background-color: rgb(129, 31, 209);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            display: flex;
+            background-color: rgb(150, 25, 167);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+    </style>
+</head>
+
+<body>
+
+    <!-- Titulo -->
+    <style>
+        body {
+            background-color: rgb(38, 14, 83);
+        }
+    </style>
+
+    <header>
+        <div style="text-align: center;">
+            <img src="Tacos Header2.png" alt="Tacos y Refrescos" width="350px" height="100px">
+        </div>
+    </header>
+
+    <div style="text-align: center;">
+        <img src="Gato.jpg" alt="Gato taquero">
+    </div>
+    <hr>
+
+    <!-- Menú -->
+
+    <div style="text-align: left;">
+        <h2 style="color: white;">Conoce nuestro menú:</h2>
+    </div>
+
+    <dl style="color: white;">
+        <dt> Tacos:</dt>
+        <dd>- Pastor...................$15</dd>
+        <dd>- Suadero...............$15</dd>
+        <dd>- Chorizo...............$15</dd>
+        <dd>- Chuleta................$15</dd>
+        <dd>- Tripa...................$15</dd>
+        <dd>- Campechano.......$15</dd>
+        <dd>- Con queso.......... $7</dd><br><br>
+        <dt>Refrescos de lata 355 ml......$18</dt>
+        <dt>Botella de plastico 600 ml....$25</dt>
+        <dt>Sabores:</dt>
+        <dd>-Coca-Cola</dd>
+        <dd>-Manzana</dd>
+        <dd>-Naranja</dd>
+        <dd>-Mango</dd>
+        <dd>-Guayaba</dd>
+
+    </dl>
+
+    <hr>
+
+    <!-- Pedidos -->
+
+    <div style="text-align: left;">
+        <h3 style="color: white;">Tú que eres programador, prográmate una orden:</h3>
+    </div>
+
+    <div style="text-align: left;">
+        <h4 style="color: white;">¿De qué y cuántos joven?</h4>
+        <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+        <label style="color: white;" for="Pastor"> Tacos de Pastor</label>
+        <input type="number" id="PastorNumber" name="PastorNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br>
+
+        <input type="checkbox" id="Suadero" name="Suadero" value="Suadero">
+        <label style="color: white;" for="Suadero">Tacos de Suadero</label>
+        <input type="number" id="SuaderoNumber" name="SuaderoNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br>
+
+        <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+        <label style="color: white;" for="Chorizo">Tacos de Chorizo</label>
+        <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br>
+
+        <input type="checkbox" id="Tripa" name="Tripa" value="Tripa">
+        <label style="color: white;" for="Tripa">Tacos de Tripa</label>
+        <input type="number" id="TripaNumber" name="TripaNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br>
+
+        <input type="checkbox" id="Chuleta" name="Chuleta" value="Chuleta">
+        <label style="color: white;" for="Chuleta">Tacos de Chuleta</label>
+        <input type="number" id="ChuletaNumber" name="ChuletaNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br>
+
+        <input type="checkbox" id="Campechano" name="Campechano" value="Campechano">
+        <label style="color: white;" for="Campechano">Tacos Campechanos</label>
+        <input type="number" id="CampechanoNumber" name="CampechanoNumber" placeholder="¿Cuántos?">
+        <input type="radio" id="queso" name="queso" value="queso">
+        <label style="color: white; for=" queso">¿Con queso?</label><br><br>
+    </div>
+
+    <label style="color: white;" for="tacos">Elige tu refresco</label>
+    <select id="refresco" name="refresco">
+        <option value="Coca-Cola">Coca-Cola</option>
+        <option value="Manzana">Manzana</option>
+        <option value="Naranja">Naranja</option>
+        <option value="Mango">Mango</option>
+        <option value="Guayaba">Guayaba</option>
+        <option value="¡No gracias!">¡No, gracias!</option>
+    </select>
+
+    <hr>
+
+    <br>
+    <!-- Sucursales -->
+
+    <div style="text-align: left;">
+        <h3 style="color: white;">Nuestras sucursales</h3>
+    </div>
+
+    <div style="color: white;">
+        <a style="color: white;" href="https://www.google.com/maps/place/Centro+de+Tecnología+Microsoft+México/@19.3663388,-99.2644294,15z/data=!4m5!3m4!1s0x0:0x219eb3ca4b09983a!8m2!3d19.3662467!4d-99.2643248" target="blank">Sucursal Centro</a>
+    </div>
+
+    <div style="color: white;">
+        <a style="color: white;" href="https://www.google.com/maps/place/Canc%C3%BAn,+Q.R./@20.5807721,-89.1095684,7.96z/data=!4m5!3m4!1s0x8f4c2b05aef653db:0xce32b73c625fcd8a!8m2!3d21.161908!4d-86.8515279" target="blank">Sucursal Sur</a>
+    </div>
+
+    <div style="color: white;">
+        <a style="color: white;" href="https://www.google.com/maps/place/Microsoft/@25.6428047,-100.3214614,15z/data=!4m2!3m1!1s0x0:0x49ada76a0ea0e070?sa=X&ved=2ahUKEwjmwoGRq-r6AhXcKkQIHRIUCd4Q_BJ6BAhXEAU" target="blank">Sucursal Norte</a>
+    </div>
+
+    <hr>
+
+    <!-- Ingresar datos -->
+
+    <div style="text-align: left;">
+        <h3 style="color: white;">Ingresa tus datos para enviar tu orden:</h3>
+    </div>
+
+    <label style="color: white;" for="correo1">Nombre completo:</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <label style="color: white;" for="correo1">Correo:</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <label style="color: white;" for="tel1">Número de Teléfono:</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <label style="color: white;" for="direc">Dirección:</label><br>
+    <input type="direc" id="direc" name="direc" maxlength="100"><br><br>
+
+    <label style="color: white;" for="psw1">Ingresa una Contraseña:</label><br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+
+    <hr>
+    <!-- Boton de pedido -->
+    <h3 style="color: white;">Confirmar pedido</h3>
+    <input type="button" id="Enviar" name="boton1" value="Enviar" onclick="alert('Tu pago no pasó.');"><br><br>
+
+    <!-- footer -->
+    <footer>
+        <p>Aviso de Privacidad de datos personales: NO se realizarán transferencias de datos personales, NO vendemos tus
+            datos, NO te acusaremos con el SAT, salvo aquéllas
+            que sean necesarias para atender requerimientos debidamente fundados y motivados, provenientes de una
+            autoridad competente.</p> <img src="guiño.png" alt="guiño-guiño" width="75px" height="75px">
+    </footer>
+
+</body>
+
+</html>
